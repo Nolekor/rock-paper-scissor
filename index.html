@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Rock-Paper-scissor</title>
 </head>
 <body>
+
     <div class="biggest-container">
         <div class="title-container">
             <h1>Welcome to the game!!</h1>
@@ -17,10 +17,21 @@
             <h3>Choose your destiny</h3>
         </div>
         <div class="button-container">
-            <button type="button">Rock!</button>
-            <button type="button">Paper!</button>
-            <button type="button">Scissor!</button>
+            <button id="rock" onclick="onClickSelection('rock')">Rock!</button>
+            <button id="paper" onclick="onClickSelection('paper')">Paper!</button>
+            <button id="scissor" onclick="onClickSelection('scissor')" >Scissor!</button>
+        </div>
+        <div class="announcer">
+        </div>
+        <div class="display-selection">
+            <p id="demo"></p>
+        </div>
+        <div class="round-counter">
+            <p></p>
+            <p></p>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
